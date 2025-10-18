@@ -22,12 +22,12 @@ const Footer = (): ReactElement => {
               Email
             </a>
             <a
-              href="https://vonage.com"
+              href="https://linkedin.com/in/behei"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Vonage"
+              aria-label="LinkedIn"
             >
-              Vonage
+              LinkedIn
             </a>
           </div>
         </div>

@@ -61,6 +61,12 @@ const Contact = (): ReactElement => {
                   github.com/behei-vonage
                 </a>
               </div>
+              <div className="contact-item">
+                <strong>LinkedIn:</strong>
+                <a href="https://linkedin.com/in/behei" target="_blank" rel="noopener noreferrer">
+                  linkedin.com/in/behei
+                </a>
+              </div>
             </div>
           </div>
 
