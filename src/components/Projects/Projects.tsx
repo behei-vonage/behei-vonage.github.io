@@ -1,13 +1,13 @@
-import { ReactElement } from 'react'
-import './Projects.css'
+import { ReactElement } from 'react';
+import './Projects.css';
 
 interface Project {
-  id: number
-  title: string
-  description: string
-  technologies: string[]
-  github: string
-  demo: string
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[];
+  github: string;
+  demo: string;
 }
 
 const Projects = (): ReactElement => {
@@ -48,7 +48,7 @@ const Projects = (): ReactElement => {
       github: '#',
       demo: '#',
     },
-  ]
+  ];
 
   return (
     <section id="projects" className="projects">
@@ -91,7 +91,7 @@ const Projects = (): ReactElement => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

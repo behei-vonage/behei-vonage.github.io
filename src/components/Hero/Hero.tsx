@@ -1,5 +1,5 @@
-import { ReactElement } from 'react'
-import './Hero.css'
+import { ReactElement } from 'react';
+import './Hero.css';
 
 const Hero = (): ReactElement => {
   return (
@@ -35,7 +35,7 @@ const Hero = (): ReactElement => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

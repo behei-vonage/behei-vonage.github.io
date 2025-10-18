@@ -1,8 +1,8 @@
-import './Footer.css'
-import { ReactElement } from 'react'
+import './Footer.css';
+import { ReactElement } from 'react';
 
 const Footer = (): ReactElement => {
-  const currentYear: number = new Date().getFullYear()
+  const currentYear: number = new Date().getFullYear();
 
   return (
     <footer className="footer">
@@ -33,7 +33,7 @@ const Footer = (): ReactElement => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

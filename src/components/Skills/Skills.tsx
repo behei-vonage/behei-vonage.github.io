@@ -1,9 +1,9 @@
-import { ReactElement } from 'react'
-import './Skills.css'
+import { ReactElement } from 'react';
+import './Skills.css';
 
 interface SkillCategory {
-  category: string
-  skills: string[]
+  category: string;
+  skills: string[];
 }
 
 const Skills = (): ReactElement => {
@@ -32,7 +32,7 @@ const Skills = (): ReactElement => {
       category: 'Specialized',
       skills: ['Noise Suppression', 'E2E Encryption', 'ML Media Filters', 'UI/UX Design'],
     },
-  ]
+  ];
 
   return (
     <section id="skills" className="skills">
@@ -54,7 +54,7 @@ const Skills = (): ReactElement => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

@@ -1,10 +1,10 @@
-import { ReactElement, useState, ChangeEvent, FormEvent } from 'react'
-import './Contact.css'
+import { ReactElement, useState, ChangeEvent, FormEvent } from 'react';
+import './Contact.css';
 
 interface FormData {
-  name: string
-  email: string
-  message: string
+  name: string;
+  email: string;
+  message: string;
 }
 
 const Contact = (): ReactElement => {
@@ -12,23 +12,23 @@ const Contact = (): ReactElement => {
     name: '',
     email: '',
     message: '',
-  })
+  });
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
-    e.preventDefault()
+    e.preventDefault();
     alert(
       "Form submission would be handled here. Since there's no backend, you can integrate with services like EmailJS, Formspree, or Netlify Forms."
-    )
+    );
     // eslint-disable-next-line no-console
-    console.log('Form data:', formData)
-  }
+    console.log('Form data:', formData);
+  };
 
   return (
     <section id="contact" className="contact">
@@ -105,7 +105,7 @@ const Contact = (): ReactElement => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

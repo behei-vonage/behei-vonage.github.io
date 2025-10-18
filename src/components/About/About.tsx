@@ -1,6 +1,6 @@
-import { ReactElement } from 'react'
-import './About.css'
-import headshot from '../../assets/headshot.jpeg'
+import { ReactElement } from 'react';
+import './About.css';
+import headshot from '../../assets/headshot.jpeg';
 
 const About = (): ReactElement => {
   return (
@@ -34,7 +34,7 @@ const About = (): ReactElement => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

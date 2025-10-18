@@ -1,16 +1,16 @@
-import { ReactElement, useState } from 'react'
-import './Header.css'
+import { ReactElement, useState } from 'react';
+import './Header.css';
 
 const Header = (): ReactElement => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const scrollToSection = (sectionId: string): void => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setIsMenuOpen(false)
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
     }
-  }
+  };
 
   return (
     <header className="header">
@@ -38,7 +38,7 @@ const Header = (): ReactElement => {
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

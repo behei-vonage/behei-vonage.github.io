@@ -53,7 +53,6 @@ export default [
       }],
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
-      
       // Code style
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'prefer-const': 'error',
@@ -63,7 +62,7 @@ export default [
       
       // Prettier integration
       'prettier/prettier': ['error', {
-        semi: false,
+        semi: true,
         singleQuote: true,
         trailingComma: 'es5',
         printWidth: 100,
