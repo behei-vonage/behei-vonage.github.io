@@ -76,28 +76,28 @@ The project uses Prettier for consistent formatting:
 ### Development
 
 ```bash
-npm run dev              # Start development server
-npm run build            # Build for production (includes type checking)
-npm run preview          # Preview production build
+yarn dev              # Start development server
+yarn build            # Build for production (includes type checking)
+yarn preview          # Preview production build
 ```
 
 ### Code Quality
 
 ```bash
-npm run lint             # Run ESLint
-npm run lint:fix         # Fix ESLint errors automatically
-npm run format           # Format code with Prettier
-npm run format:check     # Check code formatting
-npm run type-check       # Run TypeScript type checking
+yarn lint             # Run ESLint
+yarn lint:fix         # Fix ESLint errors automatically
+yarn format           # Format code with Prettier
+yarn format:check     # Check code formatting
+yarn type-check       # Run TypeScript type checking
 ```
 
 ### Testing
 
 ```bash
-npm test                 # Run tests in watch mode
-npm test -- --run        # Run tests once
-npm run test:ui          # Run tests with UI
-npm run test:coverage    # Run tests with coverage report
+yarn test             # Run tests in watch mode
+yarn test --run       # Run tests once
+yarn test:ui          # Run tests with UI
+yarn test:coverage    # Run tests with coverage report
 ```
 
 ## Linting Rules
@@ -127,11 +127,11 @@ npm run test:coverage    # Run tests with coverage report
 
 Before committing code, ensure:
 
-1. ✅ `npm run lint` passes with no errors
-2. ✅ `npm run type-check` passes
-3. ✅ `npm test -- --run` all tests pass
-4. ✅ `npm run format` has been run
-5. ✅ `npm run build` succeeds
+1. ✅ `yarn lint` passes with no errors
+2. ✅ `yarn type-check` passes
+3. ✅ `yarn test --run` all tests pass
+4. ✅ `yarn format` has been run
+5. ✅ `yarn build` succeeds
 
 ## IDE Setup
 
@@ -166,7 +166,7 @@ If you see JSX namespace errors, ensure:
 
 ### Linting Errors
 
-Run `npm run lint:fix` to automatically fix most issues.
+Run `yarn lint:fix` to automatically fix most issues.
 
 For persistent issues, check:
 - ESLint configuration in `eslint.config.mjs`

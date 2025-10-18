@@ -79,16 +79,16 @@ All components have comprehensive unit tests using Vitest and React Testing Libr
 
 ```bash
 # Run all tests
-npm test
+yarn test
 
 # Run tests in watch mode
-npm test
+yarn test
 
 # Run tests with UI
-npm run test:ui
+yarn test:ui
 
 # Run tests with coverage
-npm run test:coverage
+yarn test:coverage
 ```
 
 ## Test Configuration
