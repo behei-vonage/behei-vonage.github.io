@@ -59,7 +59,7 @@ This portfolio itself demonstrates my technical capabilities:
 
 ```bash
 # Clone the repository
-git clone https://github.com/behei-vonage/personal-portfolio.git
+git clone https://github.com/behei-vonage/behei-vonage.github.io.git
 
 # Navigate to project directory
 cd personal-portfolio

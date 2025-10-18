@@ -47,6 +47,6 @@
   "description": "Personal portfolio website built with React, TypeScript, and Vite",
   "author": "Mykhailo (Misha) Behei <misha.behey@gmail.com>",
   "license": "ISC",
-  "homepage": "https://behei-vonage.github.io/personal-portfolio",
+  "homepage": "https://behei-vonage.github.io",
   "packageManager": "yarn@1.22.22"
 }
