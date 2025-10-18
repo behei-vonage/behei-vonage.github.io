@@ -15,7 +15,7 @@ describe('Footer', () => {
     render(<Footer />);
     expect(screen.getByText('GitHub')).toBeInTheDocument();
     expect(screen.getByText('Email')).toBeInTheDocument();
-    expect(screen.getByText('Vonage')).toBeInTheDocument();
+    expect(screen.getByText('LinkedIn')).toBeInTheDocument();
   });
 
   it('GitHub link has correct href', () => {
@@ -32,23 +32,21 @@ describe('Footer', () => {
     expect(emailLink).toHaveAttribute('href', 'mailto:misha.behey@gmail.com');
   });
 
-  it('Vonage link has correct href', () => {
+  it('LinkedIn link has correct href', () => {
     render(<Footer />);
-    const vonageLink = screen.getByText('Vonage').closest('a');
-    expect(vonageLink).toHaveAttribute('href', 'https://vonage.com');
-    expect(vonageLink).toHaveAttribute('target', '_blank');
-    expect(vonageLink).toHaveAttribute('rel', 'noopener noreferrer');
+    const linkedinLink = screen.getByText('LinkedIn').closest('a');
+    expect(linkedinLink).toHaveAttribute('href', 'https://linkedin.com/in/behei');
+    expect(linkedinLink).toHaveAttribute('target', '_blank');
+    expect(linkedinLink).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
   it('all links have proper aria-labels', () => {
     render(<Footer />);
     const githubLink = screen.getByLabelText('GitHub');
     const emailLink = screen.getByLabelText('Email');
-    const vonageLink = screen.getByLabelText('Vonage');
 
     expect(githubLink).toBeInTheDocument();
     expect(emailLink).toBeInTheDocument();
-    expect(vonageLink).toBeInTheDocument();
   });
 
   it('renders footer element', () => {

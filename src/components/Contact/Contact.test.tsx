@@ -23,6 +23,13 @@ describe('Contact', () => {
     expect(githubLink.closest('a')).toHaveAttribute('href', 'https://github.com/behei-vonage');
   });
 
+  it('renders LinkedIn link', () => {
+    render(<Contact />);
+    const linkedinLink = screen.getByText('linkedin.com/in/behei');
+    expect(linkedinLink).toBeInTheDocument();
+    expect(linkedinLink.closest('a')).toHaveAttribute('href', 'https://linkedin.com/in/behei');
+  });
+
   it('renders all form fields', () => {
     render(<Contact />);
     expect(screen.getByLabelText('Name')).toBeInTheDocument();
