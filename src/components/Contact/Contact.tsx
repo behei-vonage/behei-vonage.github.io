@@ -53,7 +53,7 @@ const Contact = (): ReactElement => {
               </div>
               <div className="contact-item">
                 <strong>Location:</strong>
-                <span>West Bend, Wisconsin</span>
+                <span>West Bend, Wisconsi</span>
               </div>
               <div className="contact-item">
                 <strong>GitHub:</strong>
